@@ -1,5 +1,5 @@
 local Flux = loadstring(game:HttpGet"https://raw.githubusercontent.com/dawid-scripts/UI-Libs/main/fluxlib.txt")()
-local Window = Flux:Window("IoIhub", "For Plane Crazy", Color3.fromRGB(255, 110, 48), Enum.KeyCode.N)
+local Window = Flux:Window("IoIhub", "For Plane Crazy", Color3.fromRGB(255, 80, 74), Enum.KeyCode.N)
 local mouse = game.Players.LocalPlayer:GetMouse()
 local uis = game:GetService("UserInputService")
 local RunService = game:GetService("RunService")
@@ -65,7 +65,7 @@ function parachute()
 	end
 end
 
-local Tab1 = Window:Tab("Building", "http://www.roblox.com/asset/?id=6023426915")
+local Tab1 = Window:Tab("Building", "http://www.roblox.com/asset/?id=8570194020")
 Tab1:Label("Building tools")
 Tab1:Button("Paint aircraft random material", "Paints your vessel random materials every 0.5 seconds.", function()
 	if isRandomMaterial then
@@ -157,7 +157,7 @@ Tab1:Button("Remove IoIhub", "Removes IoIhub from the game.", function()
 	game:GetService("CoreGui").FluxLib:Destroy()
 end)
 
-local Tab2 = Window:Tab("PVP", "http://www.roblox.com/asset/?id=6023426915")
+local Tab2 = Window:Tab("PVP", "http://www.roblox.com/asset/?id=8570194020")
 Tab2:Label("PVP tools (must be in PVP server)")
 Tab2:Button("Kill gunners", "Kill players using guns.", function()
 	pcall(function()
@@ -282,7 +282,7 @@ Tab2:Button("Kill bombers", "Kill players using TNT.", function()
 	end
 end)
 
-local Tab3 = Window:Tab("General", "http://www.roblox.com/asset/?id=6023426915")
+local Tab3 = Window:Tab("General", "http://www.roblox.com/asset/?id=8570194020")
 Tab3:Label("General tools (works on both gamemodes)")
 Tab3:Button("Spam blacklist", "Blacklist and unblacklist other people to cause them to get sent back to their base.", function()
 	if isSpamBlacklist then
@@ -584,7 +584,7 @@ Tab3:Button("Explode TNT", "Explode TNT while in non-PVP servers.", function()
 	end
 end)
 
-local Tab4 = Window:Tab("Paint", "http://www.roblox.com/asset/?id=6023426915")
+local Tab4 = Window:Tab("Paint", "http://www.roblox.com/asset/?id=8570194624")
 Tab4:Label("Paint images on canvas. Accepts Discord CDN links.")
 Tab4:Textbox("1x1 canvas", "requires 1x1 canvas", true, function(text)
 	local link = text
@@ -867,7 +867,7 @@ Tab4:Button("Rainbow vessel", "Paint your vessel into random colors.", function(
 	end
 end)
 
-local Tab5 = Window:Tab("Video", "http://www.roblox.com/asset/?id=6023426915")
+local Tab5 = Window:Tab("Video", "http://www.roblox.com/asset/?id=8570194624")
 Tab5:Label("Play videos on 24x24 canvas.")
 Tab5:Button("Stop playing video", "Stop the video from playing.", function()
 	pcall(function()
